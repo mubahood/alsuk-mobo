@@ -1,0 +1,7 @@
+password: 256Kampala+
+first   : Muhindo Mubaraka
+Organization UNIT: DEV
+Organization : mama.ug
+CITY: Kampala
+Province: Kampala
+COUNTRY: UG

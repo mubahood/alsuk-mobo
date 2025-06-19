@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="afee56e8-5137-40a4-b137-3dac06520f5d" name="Changes" comment="new changes">
+      <change afterPath="$PROJECT_DIR$/android/.kotlin/errors/errors-1750234066518.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.kotlin/errors/errors-1750234066526.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.kotlin/errors/errors-1750234066533.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.kotlin/errors/errors-1750234066544.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.kotlin/errors/errors-1750274323515.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.kotlin/errors/errors-1750274323534.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.kotlin/errors/errors-1750274323548.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/.kotlin/errors/errors-1750274323572.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/blit-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/widgets/category_grid.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/widgets/category_picker_sheet.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/widgets/dashboard_app_bar.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/widgets/product_card.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/widgets/product_grid.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/widgets/promotional_banner.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/widgets/section_header.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/widgets/shimmer_loading.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/widgets/vendor_list.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/dartpad/web_plugin_registrant.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/.filecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/app.dill" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/dart_build.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/dart_build.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/dart_build_result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/debug_android_application.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/flutter_assets.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/gen_dart_plugin_registrant.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/gen_localizations.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/install_code_assets.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/install_code_assets.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/kernel_snapshot_program.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/kernel_snapshot_program.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/native_assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/outputs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/dart_plugin_registrant.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/controllers/MainController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/MainController.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/account/uverified_popup.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/account/uverified_popup.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/cart/DeliveryAddressScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/cart/DeliveryAddressScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/full_app/full_app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/full_app/full_app.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/full_app/section/OrderDetailsScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/full_app/section/OrderDetailsScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/full_app/section/SectionDashboard.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/full_app/section/SectionDashboard.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/shop/ProductSearchScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/shop/ProductSearchScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/vendors/BecomeVendorFormScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/vendors/BecomeVendorFormScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/vendors/BecomeVendorScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/vendors/BecomeVendorScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/vendors/VendorsScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/vendors/VendorsScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/theme/app_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/theme/app_theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/theme/custom_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/theme/custom_theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/AppConfig.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/AppConfig.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/Utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/Utils.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/widget_test.dart" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="BusinessListings" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mubahood&quot;
+  }
+}</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1724741161" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="afriinventions" />
+                    <option name="lastUsedInstant" value="1714705074" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="BusinessListings" />
+                    <option name="lastUsedInstant" value="1701098194" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/blitexpress/blitxpress-mobo.git&quot;,
+    &quot;accountId&quot;: &quot;afeb7382-49f4-4654-b3cd-b56e4cf3d00c&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2Vpdxnep5jHRzMUkfeQV8lIizop" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;ScreenshotViewer.SavePath&quot;: &quot;/Users/mac/Desktop/HambrenAppUpload&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.android.tools.idea.streaming.emulator.zoom.toolbar.visible&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;flutter.preview.tool.window.visible&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/github/hambren_mobo&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;flutter.settings&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\github\blitxpress-mobo\assets\images" />
+      <recent name="$PROJECT_DIR$/assets/images" />
+      <recent name="$PROJECT_DIR$/lib/screens/shop" />
+      <recent name="$PROJECT_DIR$/lib/screens/cart" />
+      <recent name="$PROJECT_DIR$/lib/screens/account" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\github\blitxpress-mobo\lib\screens\widgets" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SwiftWorkspaceSettings">
+    <option name="detectedToolchain" value="true" />
+    <option name="toolchainPathValue" value="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="afee56e8-5137-40a4-b137-3dac06520f5d" name="Changes" comment="" />
+      <created>1695537204518</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695537204518</updated>
+    </task>
+    <task id="LOCAL-00001" summary="romina">
+      <created>1701101193081</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701101193081</updated>
+    </task>
+    <task id="LOCAL-00002" summary="new changes">
+      <option name="closed" value="true" />
+      <created>1706110666762</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706110666762</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new changes">
+      <option name="closed" value="true" />
+      <created>1706110678165</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706110678165</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="latest chnages" />
+    <MESSAGE value="romina" />
+    <MESSAGE value="new changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="new changes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/screens/cart/WebViewExample.dart</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/utils/AppConfig.dart</url>
+          <line>386</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/theme/custom_theme.dart</url>
+          <line>5</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/screens/shop/PricesEntryScreen.dart</url>
+          <line>192</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/sections/widgets.dart</url>
+          <line>218</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/utils/AppConfig.dart</url>
+          <line>74</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

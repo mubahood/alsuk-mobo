@@ -1,0 +1,97 @@
+name: nudipu
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 100.0.116+116
+#  pub global run rename --bundleId hambren.com
+#  flutter pub global run rename --appname "Afriinventions"
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  internet_connection_checker: ^1.0.0+1
+  dio: ^5.8.0+1
+
+  # Base Dependencies
+  cupertino_icons: ^1.0.3
+  cached_network_image: ^3.2.0
+  flutter_form_builder: ^9.1.0
+  form_builder_validators: ^9.0.0
+  url_launcher: ^6.3.1
+  flutter_native_splash: ^2.3.6
+  image_picker: ^1.1.2
+  shimmer: ^3.0.0
+  intl: ^0.17.0
+  xml: ^6.4.2
+  flutter_svg: ^2.0.9
+  fluttertoast: ^8.2.4
+
+  get: ^4.7.2
+  sqflite: ^2.2.4+1
+  shared_preferences: ^2.0.17
+  flutter_html: ^3.0.0-beta.2
+  carousel_slider: ^5.0.0
+  path_provider: ^2.0.15
+  easy_image_viewer: ^1.2.0
+  flutter_staggered_grid_view: ^0.7.0
+  webview_flutter: ^4.10.0
+  in_app_update: ^4.2.2
+  flutx: ^0.1.2
+  html_editor_enhanced: 2.6.0
+  google_fonts: ^6.2.1
+  flutter_launcher_icons: ^0.14.3
+  flutter_feather_icons: ^2.0.0+1
+  material_design_icons_flutter: ^7.0.7296
+
+dependency_overrides:
+  intl: any
+  google_fonts: any
+  flutter_svg: any
+
+dev_dependencies:
+  change_app_package_name: ^1.0.0
+
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo-2.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/images/logo-2.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/images/logo-2.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/images/logo-2.png"
+
+
+
+  # Icons
+  material_design_icons_flutter: ^7.0.7296
+  flutter_feather_icons: ^2.0.0+1
+  flutter_lints: 4.0.0
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/images/login/
+    - assets/images/logo.png
+    - assets/packages/
+    - assets/packages/html_editor_enhanced/
+    - assets/packages/html_editor_enhanced/summernote.html
+
+#keytool -genkeypair -v -keystore blitexpress.jks -keyalg RSA -validity 10000 -alias upload
+#+Blit2024@!
+#blitexpress.jks
+#keytool -export -rfc -keystore blitexpress.jks -alias upload -file blitexpress.pem
