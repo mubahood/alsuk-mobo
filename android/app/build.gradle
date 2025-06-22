@@ -52,7 +52,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.eurosatgroup.blitxpress"
+        applicationId "alsukssd.com"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-build-configuration.
         minSdkVersion 22
@@ -62,11 +62,11 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file("E://github/blitxpress-mobo/blitexpress.jks")
-//            storeFile file("Users/mac/Desktop/github/blitxpress/blitexpress.jks")
-            storePassword "+Blit2024@!" 
+            storeFile file("D:/github/alsuk-mobo/alsud-key.jks")
+//            storeFile file("Users/mac/Desktop/github/Al Sud/blitexpress.jks")
+            storePassword "256Anjane"
             keyAlias "upload"
-            keyPassword "+Blit2024@!"
+            keyPassword "256Anjane"
         }
     }
 
@@ -78,7 +78,7 @@ android {
             signingConfig signingConfigs.release
         }
     }
-    namespace 'com.eurosatgroup.blitxpress'
+    namespace 'alsukssd.com'
 }
 
 flutter {

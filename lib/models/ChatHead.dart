@@ -31,6 +31,61 @@ class ChatHead {
   String product_owner_unread_messages_count ='';
   int myUnreadCount = 0;
 
+  Map<String, String> getOtherUser(LoggedInUserModel me) {
+    // Check if the current user is the customer in this chat.
+    if (me.id.toString() == customer_id) {
+      // If I am the customer, the other user is the product owner.
+      return {
+        'id': product_owner_id,
+        'name': product_owner_name,
+        'photo': product_owner_photo,
+      };
+    } else {
+      // Otherwise, I must be the product owner, so the other user is the customer.
+      return {
+        'id': customer_id,
+        'name': customer_name,
+        'photo': customer_photo,
+      };
+    }
+  }
+
+
+  static Future<ChatHead> findChatHead({
+    required LoggedInUserModel userModel,
+    required String senderId,
+    required String receiverId,
+    String? productId,
+  }) async {
+    // Basic validation to prevent errors with empty IDs.
+    if (senderId.isEmpty || receiverId.isEmpty) {
+      return ChatHead();
+    }
+
+    // Construct the base of the WHERE clause to find the two participants
+    // regardless of their role (customer or owner).
+    String whereClause =
+        '((customer_id = "$senderId" AND product_owner_id = "$receiverId") OR '
+        '(customer_id = "$receiverId" AND product_owner_id = "$senderId"))';
+
+    // If a product ID is provided, add it to the query to find a
+    // product-specific chat.
+    if (productId != null && productId.isNotEmpty) {
+      whereClause += ' AND product_id = "$productId"';
+    }
+
+    // Use the existing get_items method to query the local database.
+    // We expect only one or zero results from this specific query.
+    final List<ChatHead> results = await get_items(
+      userModel,
+      where: whereClause,
+    );
+
+    // If a matching chat head was found, return the first one.
+    // Otherwise, return a new, empty ChatHead instance.
+    return results.isNotEmpty ? results.first : ChatHead();
+  }
+
 
   int myUnread (LoggedInUserModel u){
     if(u.id.toString() == product_owner_id){

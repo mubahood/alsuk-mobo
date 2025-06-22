@@ -22,14 +22,14 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
   String img = '1';
 
   List<String> slogans = [
-    'Blitxpress – Fast, Reliable, and Smart Shopping for All Your Electronics',
-    'Upgrade Your Tech, Elevate Your Life – Shop Smarter with Blitxpress!',
-    'Blitxpress: Quality Electronics, Unmatched Convenience!',
-    'Your One-Stop Shop for the Latest and Greatest in Electronics!',
-    'Blitxpress: The Future of Electronics Shopping is Here!',
-    'Get the Best Deals on the Latest Electronics with Blitxpress!',
-    'Blitxpress: Your Source for the Best Electronics at the Best Prices!',
-    'Shop the Best Electronics at the Best Prices with Blitxpress!',
+    'Buy and sell with ease on Al Sud.',
+    'Discover great deals and offers at Al Sud.',
+    'Al Sud: Your trusted marketplace for buying and selling.',
+    'Find what you need or sell what you have on Al Sud.',
+    'Experience secure transactions with Al Sud.',
+    'Connect with buyers and sellers across Al Sud.',
+    'Al Sud makes buying and selling simple.',
+    'Start your buying and selling journey with Al Sud today.',
   ];
 
   @override
@@ -107,17 +107,6 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             child: SafeArea(
               child: Column(
                 children: [
-                  // Top logo with padding
-                  Padding(
-                    padding: const EdgeInsets.only(top: 50, left: 25),
-                    child: Align(
-                      alignment: Alignment.topLeft,
-                      child: Image.asset(
-                        'assets/images/logo.png',
-                        width: 150,
-                      ),
-                    ),
-                  ),
                   const Spacer(),
                   // Slogan text
                   Padding(

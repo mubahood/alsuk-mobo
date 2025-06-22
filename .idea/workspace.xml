@@ -5,69 +5,172 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afee56e8-5137-40a4-b137-3dac06520f5d" name="Changes" comment="new changes">
-      <change afterPath="$PROJECT_DIR$/android/.kotlin/errors/errors-1750234066518.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.kotlin/errors/errors-1750234066526.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.kotlin/errors/errors-1750234066533.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.kotlin/errors/errors-1750234066544.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.kotlin/errors/errors-1750274323515.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.kotlin/errors/errors-1750274323534.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.kotlin/errors/errors-1750274323548.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.kotlin/errors/errors-1750274323572.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blit-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/widgets/category_grid.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/widgets/category_picker_sheet.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/widgets/dashboard_app_bar.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/widgets/product_card.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/widgets/product_grid.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/widgets/promotional_banner.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/widgets/section_header.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/widgets/shimmer_loading.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/widgets/vendor_list.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/dartpad/web_plugin_registrant.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/.filecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/app.dill" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/dart_build.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/dart_build.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/dart_build_result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/debug_android_application.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/flutter_assets.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/gen_dart_plugin_registrant.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/gen_localizations.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/install_code_assets.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/install_code_assets.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/kernel_snapshot_program.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/kernel_snapshot_program.stamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/native_assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c5375686b0e8c57fbcc80698ad548da6/outputs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/dart_plugin_registrant.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/version" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/kotlin/alsukssd/com/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/.cmake/api/v1/reply/cache-v2-63d9e020f3bbd4871cf2.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/.cmake/api/v1/reply/cache-v2-63d9e020f3bbd4871cf2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/.cmake/api/v1/reply/cmakeFiles-v1-cad69dabd86510557211.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/.cmake/api/v1/reply/cmakeFiles-v1-cad69dabd86510557211.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/.cmake/api/v1/reply/codemodel-v2-52ff15bc3a06a0e76326.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/.cmake/api/v1/reply/codemodel-v2-52ff15bc3a06a0e76326.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/android_gradle_build_mini.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/metadata_generation_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/metadata_generation_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/symbol_folder_index.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/arm64-v8a/symbol_folder_index.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/.cmake/api/v1/reply/cache-v2-0dc3e687001c06e18b91.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/.cmake/api/v1/reply/cache-v2-0dc3e687001c06e18b91.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/.cmake/api/v1/reply/cmakeFiles-v1-97af8d164e5de2b92f88.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/.cmake/api/v1/reply/cmakeFiles-v1-97af8d164e5de2b92f88.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/.cmake/api/v1/reply/codemodel-v2-9b092c3787147d8f4ba0.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/.cmake/api/v1/reply/codemodel-v2-9b092c3787147d8f4ba0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/android_gradle_build_mini.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/metadata_generation_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/metadata_generation_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/symbol_folder_index.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/armeabi-v7a/symbol_folder_index.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/hash_key.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/hash_key.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/.cmake/api/v1/reply/cache-v2-e2cf171f87cf23960e1e.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/.cmake/api/v1/reply/cache-v2-e2cf171f87cf23960e1e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/.cmake/api/v1/reply/cmakeFiles-v1-a4ab9e80db8169753d9e.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/.cmake/api/v1/reply/cmakeFiles-v1-a4ab9e80db8169753d9e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/.cmake/api/v1/reply/codemodel-v2-85f0bc3b7775de18ac0d.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/.cmake/api/v1/reply/codemodel-v2-85f0bc3b7775de18ac0d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/android_gradle_build_mini.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/metadata_generation_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/metadata_generation_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/symbol_folder_index.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86/symbol_folder_index.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/.cmake/api/v1/reply/cache-v2-b0cdde0306aa32a7e9bd.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/.cmake/api/v1/reply/cache-v2-b0cdde0306aa32a7e9bd.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/.cmake/api/v1/reply/cmakeFiles-v1-2a642979f62dbc9a015a.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/.cmake/api/v1/reply/cmakeFiles-v1-2a642979f62dbc9a015a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/.cmake/api/v1/reply/codemodel-v2-250bd2563d7fe0620898.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/.cmake/api/v1/reply/codemodel-v2-250bd2563d7fe0620898.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/android_gradle_build.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/android_gradle_build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/android_gradle_build_mini.json" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/android_gradle_build_mini.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/metadata_generation_command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/metadata_generation_command.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/symbol_folder_index.txt" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/.cxx/Debug/1kt26574/x86_64/symbol_folder_index.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/controllers/MainController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/MainController.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/account/uverified_popup.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/account/uverified_popup.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/cart/DeliveryAddressScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/cart/DeliveryAddressScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/kotlin/com/eurosatgroup/blitxpress/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/drawable/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hambren.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hero-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hero-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hero-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hero-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hero-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/innovation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/jobs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logo-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/logo-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Podfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/AppDelegate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-50x50@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-50x50@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-57x57@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-57x57@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-72x72@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-72x72@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/PrivacyInfo.xcprivacy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Runner-Bridging-Header.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/RunnerTests/RunnerTests.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/ChatHead.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/ChatHead.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/ChatMessage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/ChatMessage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/OnBoardingScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/OnBoardingScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/account/AccountEdit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/account/AccountEdit.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/cart/CartScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/cart/CartScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/chat/ChatsScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/chat/ChatsScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/chat/chat_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/chat/chat_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/full_app/full_app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/full_app/full_app.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/full_app/section/OrderDetailsScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/full_app/section/OrderDetailsScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/full_app/section/SectionDashboard.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/full_app/section/SectionDashboard.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/shop/ProductSearchScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/shop/ProductSearchScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/vendors/BecomeVendorFormScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/vendors/BecomeVendorFormScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/vendors/BecomeVendorScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/vendors/BecomeVendorScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/vendors/VendorsScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/vendors/VendorsScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/theme/app_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/theme/app_theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/full_app/section/SectionCart.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/full_app/section/SectionCart.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/jobs/JobScreen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/jobs/JobsScreen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/news/NewsPostScreen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/news/NewsPostsScreen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/shop/ProductScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/shop/ProductScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/widgets/dashboard_app_bar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/widgets/dashboard_app_bar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/widgets/product_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/widgets/product_card.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/widgets/shimmer_loading.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/widgets/shimmer_loading.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/sections/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/sections/widgets.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/theme/custom_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/theme/custom_theme.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/utils/AppConfig.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/AppConfig.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/utils/Utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/Utils.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/my_widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/my_widgets.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Flutter/Flutter-Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Flutter/Flutter-Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Podfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner/AppDelegate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner/Base.lproj/MainMenu.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner/Configs/AppInfo.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner/Configs/Debug.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner/Configs/Release.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner/Configs/Warnings.xcconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner/DebugProfile.entitlements" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner/MainFlutterWindow.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/Runner/Release.entitlements" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/macos/RunnerTests/RunnerTests.swift" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/widget_test.dart" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,18 +270,18 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/github/hambren_mobo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/github/alsuk-mobo/android&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;flutter.settings&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\alsuk-mobo\assets\images" />
       <recent name="E:\github\blitxpress-mobo\assets\images" />
       <recent name="$PROJECT_DIR$/assets/images" />
       <recent name="$PROJECT_DIR$/lib/screens/shop" />
       <recent name="$PROJECT_DIR$/lib/screens/cart" />
-      <recent name="$PROJECT_DIR$/lib/screens/account" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\github\blitxpress-mobo\lib\screens\widgets" />
@@ -257,13 +360,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/utils/AppConfig.dart</url>
-          <line>386</line>
+          <line>385</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/theme/custom_theme.dart</url>
-          <line>5</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/screens/shop/PricesEntryScreen.dart</url>
@@ -272,13 +370,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/sections/widgets.dart</url>
-          <line>218</line>
+          <line>217</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/utils/AppConfig.dart</url>
-          <line>74</line>
+          <line>73</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/screens/widgets/dashboard_app_bar.dart</url>
+          <line>37</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/screens/chat/ChatsScreen.dart</url>
+          <line>145</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

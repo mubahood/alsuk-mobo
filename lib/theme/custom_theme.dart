@@ -3,8 +3,8 @@ import 'package:flutx/flutx.dart';
 
 class CustomTheme {
   static const Color primary_1 = Colors.green;
-  static const Color primary = Color.fromRGBO(5, 23, 161, 1.0);
-  static Color primary1 = const Color.fromRGBO(247, 94, 30, 1);
+  static const Color primary = Color(0xFFF75E1E);
+  static Color primary1 = const Color.fromRGBO(5, 23, 161, 1.0);
   static const Color primary_bg = Color(0xfff0d8ce);
   static const Color bg_primary_light = primary_bg;
   static const Color primaryDark = Color.fromRGBO(220, 106, 4, 1.0);

@@ -78,41 +78,6 @@ Widget ProductItemUi(Product pro) {
                           fontWeight: 800,
                         ),
                       ),
-                      mainController.cartItemsIDs.value
-                              .contains(pro.id.toString())
-                          ? FxContainer(
-                              color: Colors.green.shade700,
-                              padding: const EdgeInsets.symmetric(
-                                  vertical: 3, horizontal: 5),
-                              child: FxText.bodySmall(
-                                'CHECKOUT',
-                                fontWeight: 800,
-                                color: Colors.white,
-                              ),
-                            )
-                          : pro.percentate_off.isNotEmpty
-                              ? FxText("${pro.percentate_off}% OFF",
-                                  fontWeight: 800,
-                                  color: Colors.green,
-                                  fontSize: 12,
-                                  letterSpacing: -.5)
-                              : FxCard(
-                                  marginAll: 0,
-                                  color: CustomTheme.primary,
-                                  onTap: () async {
-                                    await mainController.addToCart(pro);
-                                    Utils.toast("Product added to cart.");
-                                    /*  Utils.toast(
-                                                      "Product added to cart.");*/
-                                  },
-                                  padding: const EdgeInsets.symmetric(
-                                      vertical: 3, horizontal: 5),
-                                  child: FxText.bodySmall(
-                                    'BUY NOW',
-                                    fontWeight: 800,
-                                    color: Colors.white,
-                                  ),
-                                )
                     ],
                   ),
                 ),
@@ -294,7 +259,6 @@ Widget ProductUi(Product pro) {
                         marginAll: 0,
                         color: CustomTheme.primary,
                         onTap: () {
-                          mainController.addToCart(pro);
                           Utils.toast("Product added to cart.");
                         },
                         padding: const EdgeInsets.symmetric(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:nudipu/screens/OnBoardingScreen.dart';
 import 'package:nudipu/screens/account/BoardingWelcomeScreen.dart';
@@ -27,12 +28,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme.theme,
-      builder: (context, child) {
-        return Directionality(
-          textDirection: AppTheme.textDirection,
-          child: child!,
-        );
-      },
+      builder: EasyLoading.init(),
       home: const OnBoardingScreen(),
       routes: {
         '/OnBoardingScreen': (context) => const OnBoardingScreen(),

@@ -17,6 +17,7 @@ import 'package:nudipu/screens/shop/ProductScreen.dart';
 import '../../../theme/app_theme.dart';
 import '../../../theme/custom_theme.dart';
 import '../../../utils/Utils.dart';
+import '../../controllers/MainController.dart';
 import '../../data/img.dart';
 import '../../data/my_colors.dart';
 import '../../sections/widgets.dart';
@@ -473,6 +474,8 @@ class AccountEditState extends State<AccountEdit>
     Navigator.pop(context);
     return;
   }
+
+  final MainController mainController = Get.find<MainController>();
 
   Future<bool> init_form() async {
     setState(() {

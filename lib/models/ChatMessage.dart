@@ -32,6 +32,17 @@ class ChatMessage {
 
   bool isMyMessage = false;
 
+  static Future<void> deleteForHead({required String where}) async {
+    if (!(await ChatMessage.initTable())) {
+      return;
+    }
+    Database db = await Utils.getDb();
+    if (!db.isOpen) {
+      return;
+    }
+    await db.delete(ChatMessage.tableName, where: where);
+  }
+
   static fromJson(dynamic m, LoggedInUserModel u) {
     ChatMessage obj = ChatMessage();
     if (m == null) {

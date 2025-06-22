@@ -1,1 +1,1 @@
-/Users/mac/Desktop/github/blitxpress/build/app/intermediates/cxx/Debug/1kt26574/obj/x86_64
+/Users/mac/Desktop/github/Al Sud/build/app/intermediates/cxx/Debug/1kt26574/obj/x86_64

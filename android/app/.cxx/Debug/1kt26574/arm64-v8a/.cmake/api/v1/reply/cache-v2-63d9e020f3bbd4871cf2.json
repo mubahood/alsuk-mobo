@@ -151,7 +151,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/mac/Desktop/github/blitxpress/android/app/.cxx/Debug/1kt26574/arm64-v8a"
+			"value" : "/Users/mac/Desktop/github/Al Sud/android/app/.cxx/Debug/1kt26574/arm64-v8a"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -763,7 +763,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/Users/mac/Desktop/github/blitxpress/build/app/intermediates/cxx/Debug/1kt26574/obj/arm64-v8a"
+			"value" : "/Users/mac/Desktop/github/Al Sud/build/app/intermediates/cxx/Debug/1kt26574/obj/arm64-v8a"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -1035,7 +1035,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/Users/mac/Desktop/github/blitxpress/build/app/intermediates/cxx/Debug/1kt26574/obj/arm64-v8a"
+			"value" : "/Users/mac/Desktop/github/Al Sud/build/app/intermediates/cxx/Debug/1kt26574/obj/arm64-v8a"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1355,7 +1355,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/mac/Desktop/github/blitxpress/android/app/.cxx/Debug/1kt26574/arm64-v8a"
+			"value" : "/Users/mac/Desktop/github/Al Sud/android/app/.cxx/Debug/1kt26574/arm64-v8a"
 		},
 		{
 			"name" : "Project_IS_TOP_LEVEL",

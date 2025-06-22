@@ -38,8 +38,10 @@ class _SectionCartState extends State<SectionCart> {
   void initState() {
     super.initState();
     futureInit = my_init();
-  }
 
+    mainController = widget.mainController;
+  }
+  MainController mainController = MainController();
   Future<dynamic> my_init() async {
     return "Done";
   }

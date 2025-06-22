@@ -25,7 +25,6 @@ import '../screens/account/RegisterScreen.dart';
 import '../screens/account/login_screen.dart';
 import '../screens/counselling_centre/CounselingCentreScreen.dart';
 import '../screens/events/EventModelScreen.dart';
-import '../screens/jobs/JobScreen.dart';
 import '../screens/shop/ProductScreen.dart';
 import '../screens/vendors/VendorScreen.dart';
 
@@ -101,7 +100,7 @@ Widget vendorWidget(VendorModel item) {
 Widget chatHeadUi(ChatHead item) {
   return InkWell(
     onTap: () {
-      Get.to(() => ChatScreen(item, Product()));
+      // Get.to(() => ChatScreen(item, Product()));
     },
     child: Container(
       color: item.myUnreadCount < 1
@@ -517,90 +516,6 @@ Widget userWidget1(UserModel item) {
           ),
         ),
       ],
-    ),
-  );
-}
-
-Widget jobWidget(Job u) {
-  return InkWell(
-    onTap: () {
-      Get.to(() => JobScreen(u));
-    },
-    child: Container(
-      padding: const EdgeInsets.only(top: 10, left: 5, right: 5),
-      child: Flex(
-        direction: Axis.horizontal,
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          roundedImage(u.photo.toString(), 4.5, 4.5),
-          const SizedBox(
-            width: 10,
-          ),
-          Expanded(
-            child: Flex(
-              direction: Axis.vertical,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                FxText.titleMedium(
-                  u.title,
-                  maxLines: 2,
-                  fontWeight: 800,
-                  overflow: TextOverflow.ellipsis,
-                ),
-                const SizedBox(
-                  height: 6,
-                ),
-                FxContainer(
-                  padding: const EdgeInsets.only(left: 5, right: 5),
-                  color: CustomTheme.primary,
-                  child: FxText.bodyMedium(
-                    u.category.toString().toUpperCase(),
-                    fontWeight: 800,
-                    color: Colors.white,
-                  ),
-                ),
-                const SizedBox(
-                  height: 6,
-                ),
-                Flex(
-                  direction: Axis.horizontal,
-                  children: [
-                    const Icon(
-                      FeatherIcons.map,
-                      size: 12,
-                      color: CustomTheme.primaryDark,
-                    ),
-                    const SizedBox(
-                      width: 2,
-                    ),
-                    FxText.bodySmall(
-                      u.nature_of_job.toUpperCase(),
-                      color: Colors.grey,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    const Spacer(),
-                    const Icon(
-                      FeatherIcons.clock,
-                      size: 12,
-                      color: CustomTheme.primaryDark,
-                    ),
-                    const SizedBox(
-                      width: 2,
-                    ),
-                    FxText.bodySmall(
-                      Utils.to_date_1(u.created_at),
-                      maxLines: 1,
-                      color: Colors.grey,
-                    ),
-                  ],
-                )
-              ],
-            ),
-          ),
-        ],
-      ),
     ),
   );
 }

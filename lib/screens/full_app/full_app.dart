@@ -4,6 +4,7 @@ import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:flutx/flutx.dart';
 import 'package:get/get.dart';
 import 'package:nudipu/controllers/MainController.dart';
+import 'package:nudipu/screens/chat/ChatsScreen.dart';
 import 'package:nudipu/screens/full_app/section/AccountSection.dart';
 import 'package:nudipu/screens/full_app/section/SectionCart.dart';
 import 'package:nudipu/screens/full_app/section/SectionDashboard.dart';
@@ -84,7 +85,8 @@ class _FullAppState extends State<FullApp> with SingleTickerProviderStateMixin {
                 controller: tabController,
                 children: <Widget>[
                   const SectionDashboard(),
-                  const CartScreen(),
+                  // const CartScreen(),
+                  const ChatsScreen(),
                   SectionCart(mainController),
                   SectionOrders(),
                   const AccountSection(),
@@ -113,7 +115,6 @@ class _FullAppState extends State<FullApp> with SingleTickerProviderStateMixin {
                   indicatorStyle: FxTabIndicatorStyle.rectangle,
                   yOffset: -7,
                 ),
-
                 indicatorSize: TabBarIndicatorSize.tab,
                 indicatorColor: CustomTheme.primary,
                 splashBorderRadius: BorderRadius.circular(0),

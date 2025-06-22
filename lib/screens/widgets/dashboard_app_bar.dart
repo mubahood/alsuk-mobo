@@ -30,8 +30,8 @@ class DashboardAppBar extends StatelessWidget {
           children: [
             Image.asset(
               AppConfig.logo_2,
-              width: 75,
-              height: 30,
+              width: 35,
+              height: 35,
               fit: BoxFit.fill,
             ),
             const SizedBox(width: 10),
@@ -61,6 +61,15 @@ class DashboardAppBar extends StatelessWidget {
                   ),
                 ),
               ),
+            ),
+            const SizedBox(width: 10),
+            GestureDetector(
+              onTap: onFilterTap,
+               child: Icon(
+                 FeatherIcons.sliders,
+                 size: 30,
+                 color: CustomTheme.primary,
+               ),
             ),
           ],
         ),

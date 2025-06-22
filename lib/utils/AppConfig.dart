@@ -1,30 +1,29 @@
 class AppConfig {
-  static String API_BASE_URL = "https://blit.blitxpress.com/api";
+  static String API_BASE_URL = "https://app.alsukssd.com/api";
 
-  // static String API_BASE_URL = "http://10.0.2.2/blitxpress-web/api";
+  // static String API_BASE_URL = "http://10.0.2.2/alsuk-backend/api";
   static String CURRENCY = "UGX";
   static const String ONESIGNAL_APP_ID = "89e02cdc-adf7-436d-8931-2f789bcd740a";
 
-  static const String DASHBOARD_URL = "https://blit.blitxpress.com";
+  static const String DASHBOARD_URL = "https://app.alsukssd.com";
+  // dart run change_app_package_name:main alsukssd.com
 
   /*static const String DASHBOARD_URL = "http://10.0.2.2:8000/ham";*/
   static const String APP_VERSION = "1";
-  static const String contact = "+1(437)9803253";
-  static const String DATABASE_PATH = "BLIT_XPRESS_$APP_VERSION";
-  static const int DATABASE_VERSION = 1; 
+  static const String contact = "+256780245409";
+  static const String DATABASE_PATH = "AL_SUD_$APP_VERSION";
+  static const int DATABASE_VERSION = 1;
 
   static const String MAIN_SITE_URL = DASHBOARD_URL;
 
   // static const String MAIN_SITE_URL = "http://10.0.2.2:8888/ham";
-  static const String THUMBNAIL_URL =
-      "https://hambren.com/media/products_thumbnails";
-  static const String MAIN_SITE_URL_1 = "ict4personswithdisabilities.org";
-  static String APP_NAME = "UWA - Wildlife Offenders Database";
+
+  static String APP_NAME = "Al Suk";
   static String logo = "assets/images/logo-2.png";
   static String logo2 = "assets/images/8tech.png";
   static String logos = "assets/images/logo-2.png";
   static String logo_1 = "assets/images/logo-2.png";
-  static String logo_2 = "assets/images/blit-logo.png";
+  static String logo_2 = "assets/images/logo-2.png";
   static const String USER_ROLE = "USER_ROLE";
   static String logo1 = "assets/images/logo.png";
   static String user_icon = "assets/user.png";
@@ -382,7 +381,7 @@ class AppConfig {
     "Zimbabwe"
   ];
 
-  static String app_name = 'BlitXpress';
+  static String app_name = 'Al Suk';
   static String terms =
       'https://www.freeprivacypolicy.com/live/5b255af0-c529-431c-abf9-e362264534c5';
 }

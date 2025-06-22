@@ -66,7 +66,7 @@ class _CartScreenState extends State<CartScreen>
   Widget mainWidget() {
     if (mainController.cartItems.isEmpty) {
       return Center(
-        child: FxText.titleLarge("You shopping cart is empty."),
+        child: FxText.titleLarge("Your shopping cart is empty."),
       );
     } else {
       return Container(

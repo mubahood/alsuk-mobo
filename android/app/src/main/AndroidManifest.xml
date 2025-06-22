@@ -22,8 +22,8 @@
     <application
         android:name="${applicationName}"
         android:exported="true"
-        android:icon="@mipmap/launcher_icon"
-        android:label="Blit Xpress">
+       android:icon="@drawable/logo"
+        android:label="Al Suk">
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"

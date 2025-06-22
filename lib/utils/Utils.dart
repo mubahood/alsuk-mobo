@@ -8,6 +8,7 @@ import 'package:dio/io.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:flutx/flutx.dart';
 import 'package:get/get.dart';
@@ -31,6 +32,81 @@ class Utils {
     }
     return data;
   }
+  /// Formats a DateTime object into a human-readable "time ago" string.
+  ///
+  /// - [date]: The date to format, can be a `DateTime` object or an ISO 8601 `String`.
+  /// - [short]: An optional boolean. If `true`, returns a compact format (e.g., "5m", "2h", "3d").
+  ///            If `false` (default), returns the full format (e.g., "5 minutes ago").
+  static String timeAgo(dynamic date, {bool short = false}) {
+    DateTime d;
+
+    // --- 1. Robust Date Parsing ---
+    // Handles both String and DateTime inputs gracefully.
+    if (date is String) {
+      d = DateTime.tryParse(date) ?? DateTime.now();
+    } else if (date is DateTime) {
+      d = date;
+    } else {
+      // Return an empty string if the input type is invalid.
+      return '';
+    }
+
+    final now = DateTime.now();
+    final diff = now.difference(d);
+
+    // --- 2. Handle Future Dates ---
+    // If the date is in the future, return "just now" as a sensible default.
+    if (diff.isNegative) {
+      return short ? 'now' : 'just now';
+    }
+
+    // --- 3. Conditional Formatting based on the 'short' parameter ---
+    if (diff.inSeconds < 60) {
+      return short ? '${diff.inSeconds}s' : 'just now';
+    } else if (diff.inMinutes < 60) {
+      final m = diff.inMinutes;
+      return short ? '${m}m' : '$m minute${m == 1 ? '' : 's'} ago';
+    } else if (diff.inHours < 24) {
+      final h = diff.inHours;
+      return short ? '${h}h' : '$h hour${h == 1 ? '' : 's'} ago';
+    } else if (diff.inDays < 7) {
+      final d = diff.inDays;
+      // For the short version, "1d" is more consistent than "Yesterday".
+      if (short) return '${d}d';
+      return d == 1 ? 'Yesterday' : '$d days ago';
+    } else if (diff.inDays < 30) {
+      final w = (diff.inDays / 7).floor();
+      return short ? '${w}w' : '$w week${w == 1 ? '' : 's'} ago';
+    } else if (diff.inDays < 365) {
+      final m = (diff.inDays / 30).floor();
+      return short ? '${m}mo' : '$m month${m == 1 ? '' : 's'} ago';
+    } else {
+      final y = (diff.inDays / 365).floor();
+      return short ? '${y}y' : '$y year${y == 1 ? '' : 's'} ago';
+    }
+  }
+
+
+  static void showLoader(bool dismissable) {
+    if (EasyLoading.isShow) {
+      return;
+    } else {
+      EasyLoading.show(
+        status: 'loading...',
+        maskType: EasyLoadingMaskType.black,
+        dismissOnTap: dismissable,
+      );
+    }
+    return;
+  }
+
+  static void hideLoader() {
+    if (EasyLoading.isShow) {
+      EasyLoading.dismiss();
+    }
+    return;
+  }
+
 
 /*
   static Future<void> initOneSignal(LoggedInUserModel u) async {
@@ -214,8 +290,8 @@ class Utils {
             },
           ));
 
-      print("SUCCESS");
-      print(response.data);
+  /*    print("SUCCESS");
+      print(response.data);*/
       return response.data;
     } on DioError catch (e) {
       print("========post FAILED CONNECTION===");
