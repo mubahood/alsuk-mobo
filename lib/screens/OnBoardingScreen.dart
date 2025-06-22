@@ -22,14 +22,14 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
   String img = '1';
 
   List<String> slogans = [
-    'Buy and sell with ease on Al Sud.',
-    'Discover great deals and offers at Al Sud.',
-    'Al Sud: Your trusted marketplace for buying and selling.',
-    'Find what you need or sell what you have on Al Sud.',
-    'Experience secure transactions with Al Sud.',
-    'Connect with buyers and sellers across Al Sud.',
-    'Al Sud makes buying and selling simple.',
-    'Start your buying and selling journey with Al Sud today.',
+    'Buy and sell with ease on Al Suk.',
+    'Discover great deals and offers at Al Suk.',
+    'Al Suk: Your trusted marketplace for buying and selling.',
+    'Find what you need or sell what you have on Al Suk.',
+    'Experience secure transactions with Al Suk.',
+    'Connect with buyers and sellers across Al Suk.',
+    'Al Suk makes buying and selling simple.',
+    'Start your buying and selling journey with Al Suk today.',
   ];
 
   @override

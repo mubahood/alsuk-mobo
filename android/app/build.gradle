@@ -62,8 +62,9 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file("D:/github/alsuk-mobo/alsud-key.jks")
-//            storeFile file("Users/mac/Desktop/github/Al Sud/blitexpress.jks")
+//            storeFile file("D:/github/alsuk-mobo/alsud-key.jks")
+            storeFile file("/Users/mac/Desktop/github/alsuk-mobo/alsud-key.jks")
+
             storePassword "256Anjane"
             keyAlias "upload"
             keyPassword "256Anjane"

@@ -128,7 +128,7 @@ class LoginScreenState extends State<LoginScreen> {
                       Image(
                         width: MediaQuery.of(context).size.width / 3,
                         fit: BoxFit.cover,
-                        image: AssetImage(AppConfig.logo1),
+                        image: AssetImage(AppConfig.logo),
                       ),
                       const SizedBox(
                         height: 20,

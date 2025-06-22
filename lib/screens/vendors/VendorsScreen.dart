@@ -188,7 +188,7 @@ class _VendorCard extends StatelessWidget {
                   topRight: Radius.circular(11),
                 ),
                 child: CachedNetworkImage(
-                  imageUrl: "${Utils.img(vendor.avatar)}",
+                  imageUrl: "${Utils.img(vendor.business_logo)}",
                   fit: BoxFit.cover,
                   placeholder: (context, url) =>
                   ShimmerLoadingWidget( height: 150, width: double.infinity), 

@@ -8,10 +8,9 @@ import 'package:nudipu/screens/chat/ChatsScreen.dart';
 import 'package:nudipu/screens/full_app/section/AccountSection.dart';
 import 'package:nudipu/screens/full_app/section/SectionCart.dart';
 import 'package:nudipu/screens/full_app/section/SectionDashboard.dart';
-import 'package:nudipu/screens/full_app/section/SectionOrders.dart';
 import 'package:nudipu/theme/app_theme.dart';
 
-import '../cart/CartScreen.dart';
+import '../vendors/VendorsScreen.dart';
 
 class FullApp extends StatefulWidget {
   static const String tag = "FullApp";
@@ -85,10 +84,10 @@ class _FullAppState extends State<FullApp> with SingleTickerProviderStateMixin {
                 controller: tabController,
                 children: <Widget>[
                   const SectionDashboard(),
+                  VendorsScreen(),
                   // const CartScreen(),
-                  const ChatsScreen(),
                   SectionCart(mainController),
-                  SectionOrders(),
+                  const ChatsScreen(),
                   const AccountSection(),
                 ],
               ),
@@ -120,9 +119,9 @@ class _FullAppState extends State<FullApp> with SingleTickerProviderStateMixin {
                 splashBorderRadius: BorderRadius.circular(0),
                 tabs: [
                   myNavItem('Home', FeatherIcons.home, 0),
-                  myNavItem('Cart', FeatherIcons.shoppingCart, 1),
+                  myNavItem('Vendors', FeatherIcons.users, 3),
                   myNavItem('SELL NOW', FeatherIcons.plus, 2),
-                  myNavItem('Orders', FeatherIcons.file, 3),
+                  myNavItem('Messages', FeatherIcons.messageCircle, 1),
                   myNavItem('Account', FeatherIcons.user, 4),
                 ],
               ),
