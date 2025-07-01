@@ -106,26 +106,26 @@ class ChatMessage {
       {String where = '1'}) async {
     List<ChatMessage> data = await getLocalData(where: where, u);
     if (data.isEmpty) {
-      await ChatMessage.getOnlineItems(u);
+      await ChatMessage.getOnlineItems(u,{});
       data = await getLocalData(where: where, u);
     } else {
-      ChatMessage.getOnlineItems(u);
+      ChatMessage.getOnlineItems(u,{});
     }
     return data;
   }
 
   static Future<List<ChatMessage>> getOnlineItems(LoggedInUserModel u,
-      {params}) async {
+      Map<String , dynamic> params) async {
     List<ChatMessage> data = [];
 
-    params ??= {};
     bool doDeleteAll = false;
     if (params['doDeleteAll'] != null) {
       if (params['doDeleteAll'] == true) {
         doDeleteAll = true;
       }
     }
-    print(params.toString());
+
+
     RespondModel resp =
         RespondModel(await Utils.http_get(ChatMessage.end_point, params));
 

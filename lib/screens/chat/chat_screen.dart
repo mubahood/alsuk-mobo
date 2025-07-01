@@ -8,7 +8,6 @@ import 'package:get/get.dart';
 
 import '../../../../../controllers/MainController.dart';
 import '../../../../../models/RespondModel.dart';
-import '../../../../../utils/AppConfig.dart';
 import '../../../models/ChatHead.dart';
 import '../../../models/ChatMessage.dart';
 import '../../../models/Product.dart';
@@ -183,9 +182,10 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
 
     _msgs = await ChatMessage.get_items(
       _mainC.userModel,
-      where: 'chat_head_id = ${chatHead.id}',
-    )
-      ..sort((a, b) => a.id.compareTo(b.id));
+      where: ' chat_head_id = ${chatHead.id} ',
+    );
+
+    // await ChatMessage.get_items(_mainC.userModel);
 
     _markAsRead();
 
@@ -246,6 +246,7 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
     chatHead = tempHead;
     _markAsRead();
     if (mounted) setState(() {});
+    _pollLoop();
   }
 
   // ALL OTHER LOGIC METHODS (_markAsRead, _pollLoop, _sendMessage, etc.) ARE UNCHANGED.
@@ -262,7 +263,7 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
     _listenerBusy = true;
     ChatMessage.getOnlineItems(
       _mainC.userModel,
-      params: {'chat_head_id': chatHead.id, 'doDeleteAll': true},
+      {'chat_head_id': chatHead.id, 'doDeleteAll': true},
     ).then((_) async {
       final all = await ChatMessage.getLocalData(_mainC.userModel,
           where: 'chat_head_id = ${chatHead.id}')
@@ -334,44 +335,46 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
       // A light, off-white background for a clean look
       backgroundColor: Colors.grey.shade100,
       appBar: _buildAppBar(),
-      body: Column(
-        children: [
-          Expanded(
-            child: FutureBuilder(
-              future: _initFuture,
-              builder: (_, snap) {
-                if (snap.connectionState != ConnectionState.done) {
-                  return const Center(child: CircularProgressIndicator());
-                }
-                // Main message list with background texture
-                return Container(
-                  decoration: const BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/chat_bg.png'),
-                      fit: BoxFit.cover,
-                      opacity: 0.05,
-                    ),
-                  ),
-                  child: RefreshIndicator(
-                    onRefresh: _onRefresh,
-                    color: CustomTheme.primary,
-                    child: ListView.builder(
-                      // Use ListView.builder for better performance
-                      controller: _scrollC,
-                      padding: const EdgeInsets.all(16),
-                      itemCount: _msgs.length,
-                      itemBuilder: (_, i) => ScaleTransition(
-                        scale: _fadeC,
-                        child: _buildBubble(_msgs[i]),
+      body: Container(
+        child: Column(
+          children: [
+            Expanded(
+              child: FutureBuilder(
+                future: _initFuture,
+                builder: (_, snap) {
+                  if (snap.connectionState != ConnectionState.done) {
+                    return const Center(child: CircularProgressIndicator());
+                  }
+                  // Main message list with background texture
+                  return Container(
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage('assets/images/chat_bg.png'),
+                        fit: BoxFit.cover,
+                        opacity: .4,
                       ),
                     ),
-                  ),
-                );
-              },
+                    child: RefreshIndicator(
+                      onRefresh: _onRefresh,
+                      color: CustomTheme.primary,
+                      child: ListView.builder(
+                        // Use ListView.builder for better performance
+                        controller: _scrollC,
+                        padding: const EdgeInsets.all(16),
+                        itemCount: _msgs.length,
+                        itemBuilder: (_, i) => ScaleTransition(
+                          scale: _fadeC,
+                          child: _buildBubble(_msgs[i]),
+                        ),
+                      ),
+                    ),
+                  );
+                },
+              ),
             ),
-          ),
-          _buildInputBar(),
-        ],
+            _buildInputBar(),
+          ],
+        ),
       ),
     );
   }
@@ -396,14 +399,14 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
       leadingWidth: 50,
       title: Row(
         children: [
-          CircleAvatar(
-            radius: 20,
-            backgroundColor: Colors.grey.shade200,
-            child: ClipOval(
-              child: (otherUser['photo'] != null &&
-                      otherUser['photo']!.isNotEmpty)
-                  ? CachedNetworkImage(
-                      imageUrl: Utils.getImageUrl(otherUser['photo']),
+          FxContainer(
+            paddingAll: 0,
+            child: (otherUser['photo'] != null &&
+                    otherUser['photo']!.isNotEmpty)
+                ? ClipRRect(
+                    borderRadius: BorderRadius.circular(4),
+                    child: CachedNetworkImage(
+                      imageUrl: Utils.getImageUrl(chatHead.product_photo),
                       fit: BoxFit.cover,
                       width: 40,
                       height: 40,
@@ -411,9 +414,9 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
                           FeatherIcons.user,
                           size: 20,
                           color: Colors.grey),
-                    )
-                  : const Icon(FeatherIcons.user, size: 20, color: Colors.grey),
-            ),
+                    ),
+                  )
+                : const Icon(FeatherIcons.user, size: 20, color: Colors.grey),
           ),
           const SizedBox(width: 12),
           Column(
@@ -435,7 +438,47 @@ class _ChatScreenState extends State<ChatScreen> with TickerProviderStateMixin {
       ),
       actions: [
         IconButton(
-            icon: const Icon(FeatherIcons.moreVertical), onPressed: () {}),
+            icon: const Icon(
+              FeatherIcons.trash2,
+              color: CustomTheme.primary,
+              size: 30,
+            ),
+            onPressed: () {
+              showDialog(
+                context: context,
+                builder: (context) {
+                  return AlertDialog(
+                    title: const Text("Delete Chat"),
+                    content: const Text(
+                        "Are you sure you want to delete this chat? This action cannot be undone."),
+                    actions: [
+                      TextButton(
+                        onPressed: () => Get.back(),
+                        child: const Text("Cancel"),
+                      ),
+                      TextButton(
+                        onPressed: () async {
+                          Utils.showLoader(true);
+                          try {
+                            await chatHead.delete();
+                          } catch (e) {
+                            Utils.toast('Failed to delete chat: $e',
+                                color: CustomTheme.red);
+                          }
+                          Utils.hideLoader();
+                          Get.back();
+                          Get.back();
+                        },
+                        child: const Text("Delete"),
+                      ),
+                    ],
+                  );
+                },
+              );
+            }),
+        SizedBox(
+          width: 10,
+        ),
       ],
     );
   }

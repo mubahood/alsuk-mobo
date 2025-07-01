@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 
 import '../../../controllers/MainController.dart';
 import '../../../models/Product.dart';
-import '../../../screens/chat/chat_screen.dart';
 import '../../../screens/shop/ProductScreen.dart';
 import '../../../screens/widgets/shimmer_loading.dart';
 import '../../../theme/app_theme.dart';
@@ -31,7 +30,10 @@ class ProductCard extends StatelessWidget {
       clipBehavior: Clip.antiAlias,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       child: InkWell(
-        onTap: () => Get.to(() => ProductScreen(product)),
+        onTap: () => Get.to(
+          () => ProductScreen(product),
+          preventDuplicates: false,
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -63,9 +65,6 @@ class ProductCard extends StatelessWidget {
             errorWidget: (context, url, error) =>
                 Image.asset(AppConfig.NO_IMAGE, fit: BoxFit.cover),
           ),
-
-          // --- Wishlist Icon ---
-          _buildWishlistButton(),
         ],
       ),
     );

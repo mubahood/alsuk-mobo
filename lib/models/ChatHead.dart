@@ -319,10 +319,30 @@ class ChatHead {
     await db.delete(ChatHead.tableName);
   }
 
-  delete() async {
+  Future<void> delete() async {
     Database db = await Utils.getDb();
     if (!db.isOpen) {
       Utils.toast("Failed to init local store.");
+      return;
+    }
+
+    RespondModel? respondModel = null;
+
+    try {
+      respondModel = await RespondModel(
+        await Utils.http_post("chat-head-delete", {
+          'chat_head_id': id.toString(),
+        }),
+      );
+    } catch (e) {
+      Utils.toast("Failed to mark chat as read because ${e.toString()}");
+      //throw
+      throw Exception("Failed to mark chat as read because ${e.toString()}");
+    }
+
+    if (respondModel.code != 1) {
+      Utils.toast(
+          "Failed to mark chat as read because ${respondModel.message}");
       return;
     }
 
@@ -330,6 +350,7 @@ class ChatHead {
 
     try {
       await db.delete(tableName, where: 'id = $id');
+      Utils.toast(respondModel.message);
     } catch (e) {
       Utils.toast("Failed to save student because ${e.toString()}");
     }

@@ -390,9 +390,6 @@ class _SectionCartState extends State<SectionCart> {
                                                 "Edit Product",
                                               ),
                                               onTap: () {
-                                                Utils.toast(
-                                                    "Open the web-portal to edit the product.");
-                                                return;
                                                 Get.back();
                                                 Get.to(() =>
                                                     ProductCreateScreen(

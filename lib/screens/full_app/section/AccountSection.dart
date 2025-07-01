@@ -192,7 +192,7 @@ class _AccountSectionState extends State<AccountSection> {
                                     ),
                                     onTap: () {
                                       Navigator.pop(context);
-                                      Utils.launchPhone('+14379803253');
+                                      Utils.launchPhone('+256780245409');
                                     },
                                     trailing: const Icon(
                                       FeatherIcons.chevronRight,
@@ -209,9 +209,8 @@ class _AccountSectionState extends State<AccountSection> {
                                     ),
                                     onTap: () {
                                       Navigator.pop(context);
-                                      //+14379803253
                                       Utils.launchBrowser(
-                                          'https://wa.me/+14379803253?text=Hello%20Hambren%20Team\n\n');
+                                          'https://wa.me/+256780245409?text=Hello%20Hambren%20Team\n\n');
                                     },
                                     trailing: const Icon(
                                       FeatherIcons.chevronRight,
@@ -229,7 +228,7 @@ class _AccountSectionState extends State<AccountSection> {
                                     onTap: () {
                                       Navigator.pop(context);
                                       Utils.launchBrowser(
-                                          'mailto:mubahoord360@gmail.com?subject=Hello%20Hambren%20Team&body=Hello%20Hambren%20Team\n\n');
+                                          'mailto:support@alsukssd.com?subject=Hello%Al%20Suk&body=Hello%AlSuk%20Team\n\n');
                                     },
                                     trailing: const Icon(
                                       FeatherIcons.chevronRight,

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutx/flutx.dart';
 import 'package:get/get.dart';
 import 'package:nudipu/theme/custom_theme.dart';
@@ -28,6 +27,7 @@ class _BecomeDriverState extends State<BecomeVendorScreen> {
       appBar: AppBar(
         iconTheme: const IconThemeData(color: Colors.white),
         title: const Text('Become a vendor',
+            textAlign: TextAlign.center,
             style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
         backgroundColor: CustomTheme.primary,
       ),

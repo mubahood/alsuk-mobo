@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:flutx/flutx.dart';
-import 'package:nudipu/utils/AppConfig.dart';
-import 'package:nudipu/utils/Utils.dart';
 
-import '../data/my_colors.dart';
-import '../utils/my_text.dart';
+import '../theme/app_theme.dart'; // Using the established AppTheme
+import '../utils/AppConfig.dart';
+import '../utils/Utils.dart';
 
 class AboutUsScreen extends StatefulWidget {
   const AboutUsScreen({super.key});
@@ -17,78 +17,134 @@ class AboutUsScreen extends StatefulWidget {
 class AboutUsScreenState extends State<AboutUsScreen> {
   @override
   Widget build(BuildContext context) {
+    // Using the app's theme for consistency
+    final theme = Theme.of(context);
+    final textTheme = theme.textTheme;
+
     return Scaffold(
-      backgroundColor: MyColors.primary,
+      // A light, clean background color
+      backgroundColor: AppTheme.theme.colorScheme.background,
       appBar: AppBar(
-          backgroundColor: MyColors.primary,
-          elevation: 0,
-          systemOverlayStyle: const SystemUiOverlayStyle(
-              statusBarIconBrightness: Brightness.light,
-              statusBarColor: MyColors.primary),
-          title: const Text("About", style: TextStyle(color: Colors.white)),
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back, color: Colors.white),
-            onPressed: () {
-              Navigator.pop(context);
-            },
-          ),
-          actions: <Widget>[
-            IconButton(
-              icon: const Icon(Icons.verified, color: Colors.white),
-              onPressed: () {},
-            )
-          ]),
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        alignment: Alignment.center,
-        padding: const EdgeInsets.symmetric(horizontal: 35),
-        child: SingleChildScrollView(
+        elevation: 0,
+        backgroundColor: Colors.white,
+        systemOverlayStyle: SystemUiOverlayStyle(
+          statusBarIconBrightness: Brightness.dark,
+          statusBarColor: Colors.white,
+        ),
+        leading: IconButton(
+          icon: Icon(FeatherIcons.chevronLeft,
+              color: theme.colorScheme.onBackground),
+          onPressed: () => Navigator.pop(context),
+        ),
+        title: FxText.titleLarge("About Al Suk", fontWeight: 700),
+      ),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(24.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              Text("${AppConfig.app_name} App",
-                  style: MyText.display1(context)!.copyWith(
-                      color: Colors.white, fontWeight: FontWeight.w300)),
-              Container(height: 5),
-              Container(width: 120, height: 3, color: Colors.white),
-              Container(height: 15),
-              Text("Version",
-                  style:
-                      MyText.body1(context)!.copyWith(color: MyColors.grey_20)),
-              Text("2.1.0",
-                  style: MyText.body1(context)!.copyWith(color: Colors.white)),
-              Container(height: 15),
-              Text("Last Update",
-                  style:
-                      MyText.body1(context)!.copyWith(color: MyColors.grey_20)),
-              Text("December 2023",
-                  style: MyText.body1(context)!.copyWith(color: Colors.white)),
-              Container(height: 25),
+              // --- App Logo and Title Section ---
+              Row(
+                children: [
+                  Image.asset(
+                    AppConfig.logo1, // Assuming your logo is in AppConfig
+                    width: 60,
+                    height: 60,
+                  ),
+                  const SizedBox(width: 16),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        AppConfig.app_name, // "Al Suk"
+                        style: textTheme.headlineSmall
+                            ?.copyWith(fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        "Your Local Marketplace",
+                        style: textTheme.bodyLarge
+                            ?.copyWith(color: Colors.grey.shade600),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              const SizedBox(height: 24),
+              const Divider(),
+              const SizedBox(height: 16),
+
+              // --- Version Information Section ---
+              _buildInfoRow("Version", "1.0.0 (Initial Release)"),
+              _buildInfoRow("Last Update", "June 2025"),
+              const SizedBox(height: 24),
+
+              // --- About Text Section ---
               Text(
-                  'Afriinventions, your go-to e-commerce mobile application, seamlessly merges convenience with an extensive array of products, promising an unparalleled shopping experience. '
-                  '\n\nWith a user-friendly interface, Hambren provides a one-stop destination for all your needs, offering a diverse selection of high-quality goods at your fingertips. '
-                  '\n\nFrom trendy fashion to cutting-edge electronics, users can effortlessly browse, select, and securely purchase items, all while enjoying exclusive deals and promotions.'
-                  '\n\nHambren prioritizes customer satisfaction, ensuring swift deliveries and reliable customer support. Elevate your online shopping journey with Hambren, where innovation meets accessibility for a delightful and efficient retail experience.',
-                  style: MyText.body1(context)!.copyWith(color: Colors.white)),
-              Container(height: 25),
-              FxButton.outlined(
-                backgroundColor: Colors.white,
-                borderColor: Colors.white,
-                borderRadius: BorderRadius.circular(4),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                onPressed: () {
-                  Utils.launchBrowser(AppConfig.terms);
-                },
-                child: Text("Term of services",
-                    style:
-                        MyText.body1(context)!.copyWith(color: Colors.white)),
+                "Our Mission",
+                style:
+                    textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                'Al Suk is a dedicated buy-and-sell platform built for the people of South Sudan. Our mission is to create a simple, trusted, and accessible digital marketplace that connects local communities, empowers entrepreneurs, and makes commerce easier for everyone.',
+                style: textTheme.bodyLarge
+                    ?.copyWith(color: Colors.grey.shade700, height: 1.5),
+              ),
+              const SizedBox(height: 24),
+              Text(
+                'Whether you are looking to find great deals on new and used items, or you are a local business seeking to reach more customers, Al Suk provides the tools you need to trade with confidence. We connect buyers and sellers directly through our secure and easy-to-use chat system.',
+                style: textTheme.bodyLarge
+                    ?.copyWith(color: Colors.grey.shade700, height: 1.5),
+              ),
+              const SizedBox(height: 40),
+
+              // --- Terms of Service Button ---
+              Center(
+                child: FxButton(
+                  onPressed: () {
+                    Utils.launchBrowser(AppConfig.terms);
+                  },
+                  backgroundColor: CustomTheme.primary,
+                  elevation: 0,
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                  child: FxText.bodyLarge(
+                    "Terms of Service",
+                    color: Colors.white,
+                    fontWeight: 600,
+                  ),
+                ),
               ),
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  /// A helper widget to create consistent info rows.
+  Widget _buildInfoRow(String title, String value) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            title,
+            style: Theme.of(context)
+                .textTheme
+                .bodyLarge
+                ?.copyWith(color: Colors.grey.shade600),
+          ),
+          Text(
+            value,
+            style: Theme.of(context)
+                .textTheme
+                .bodyLarge
+                ?.copyWith(fontWeight: FontWeight.bold),
+          ),
+        ],
       ),
     );
   }

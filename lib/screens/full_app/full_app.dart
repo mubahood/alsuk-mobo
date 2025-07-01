@@ -76,57 +76,59 @@ class _FullAppState extends State<FullApp> with SingleTickerProviderStateMixin {
         return false;
       },
       child: Scaffold(
-        body: Column(
-          children: [
-            Expanded(
-              child: TabBarView(
-                physics: const NeverScrollableScrollPhysics(),
-                controller: tabController,
-                children: <Widget>[
-                  const SectionDashboard(),
-                  VendorsScreen(),
-                  // const CartScreen(),
-                  SectionCart(mainController),
-                  const ChatsScreen(),
-                  const AccountSection(),
-                ],
-              ),
-            ),
-            FxContainer(
-              paddingAll: 0,
-              bordered: true,
-              enableBorderRadius: false,
-              border: Border(
-                  top: BorderSide(
-                      width: 2,
-                      color: Colors.grey.shade400,
-                      style: BorderStyle.solid)),
-              padding: FxSpacing.xy(0, 5),
-              marginAll: 0,
-              child: TabBar(
-                labelPadding: EdgeInsets.zero,
-                controller: tabController,
-                indicator: const FxTabIndicator(
-                  indicatorColor: CustomTheme.primary,
-                  indicatorHeight: 2,
-                  radius: 4,
-                  width: 60,
-                  indicatorStyle: FxTabIndicatorStyle.rectangle,
-                  yOffset: -7,
+        body: SafeArea(
+          child: Column(
+            children: [
+              Expanded(
+                child: TabBarView(
+                  physics: const NeverScrollableScrollPhysics(),
+                  controller: tabController,
+                  children: <Widget>[
+                    const SectionDashboard(),
+                    VendorsScreen(),
+                    // const CartScreen(),
+                    SectionCart(mainController),
+                    const ChatsScreen(),
+                    const AccountSection(),
+                  ],
                 ),
-                indicatorSize: TabBarIndicatorSize.tab,
-                indicatorColor: CustomTheme.primary,
-                splashBorderRadius: BorderRadius.circular(0),
-                tabs: [
-                  myNavItem('Home', FeatherIcons.home, 0),
-                  myNavItem('Vendors', FeatherIcons.users, 3),
-                  myNavItem('SELL NOW', FeatherIcons.plus, 2),
-                  myNavItem('Messages', FeatherIcons.messageCircle, 1),
-                  myNavItem('Account', FeatherIcons.user, 4),
-                ],
               ),
-            ),
-          ],
+              FxContainer(
+                paddingAll: 0,
+                bordered: true,
+                enableBorderRadius: false,
+                border: Border(
+                    top: BorderSide(
+                        width: 2,
+                        color: Colors.grey.shade400,
+                        style: BorderStyle.solid)),
+                padding: FxSpacing.xy(0, 5),
+                marginAll: 0,
+                child: TabBar(
+                  labelPadding: EdgeInsets.zero,
+                  controller: tabController,
+                  indicator: const FxTabIndicator(
+                    indicatorColor: CustomTheme.primary,
+                    indicatorHeight: 2,
+                    radius: 4,
+                    width: 60,
+                    indicatorStyle: FxTabIndicatorStyle.rectangle,
+                    yOffset: -7,
+                  ),
+                  indicatorSize: TabBarIndicatorSize.tab,
+                  indicatorColor: CustomTheme.primary,
+                  splashBorderRadius: BorderRadius.circular(0),
+                  tabs: [
+                    myNavItem('Home', FeatherIcons.home, 0),
+                    myNavItem('Vendors', FeatherIcons.users, 1),
+                    myNavItem('SELL NOW', FeatherIcons.plus, 2),
+                    myNavItem('Messages', FeatherIcons.messageCircle, 1),
+                    myNavItem('Account', FeatherIcons.user, 4),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

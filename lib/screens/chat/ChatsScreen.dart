@@ -406,7 +406,7 @@ class _ChatListItem extends StatelessWidget {
               child: ClipOval(
                 child: (otherUserPhoto != null && otherUserPhoto.isNotEmpty)
                     ? CachedNetworkImage(
-                        imageUrl: Utils.getImageUrl(otherUserPhoto),
+                        imageUrl: Utils.getImageUrl(head.product_photo),
                         fit: BoxFit.cover,
                         width: 56,
                         height: 56,
@@ -499,3 +499,12 @@ class _ChatListItem extends StatelessWidget {
     );
   }
 }
+/*
+*
+Check out this product on Al Suk!
+
+Garmin Forerunner 245
+Price: UGX 40,000
+
+Get the app here: https://app.alsukssd.com
+* * */

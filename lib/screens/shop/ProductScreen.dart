@@ -4,6 +4,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:easy_image_viewer/easy_image_viewer.dart'; // <-- IMPORT aDDED
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:flutx/flutx.dart';
@@ -19,7 +20,6 @@ import '../../controllers/MainController.dart';
 import '../../models/CartItem.dart';
 import '../../utils/AppConfig.dart';
 import '../../utils/Utils.dart';
-import '../cart/CartScreen.dart';
 import '../chat/chat_screen.dart';
 import '../widgets/shimmer_loading.dart';
 
@@ -132,19 +132,21 @@ class _ProductScreenState extends State<ProductScreen> {
     }
 
     ImageProvider imageProvider = FileImage(File(imagePath));
-    showImageViewer(
+    await showImageViewer(
       context,
       imageProvider,
       doubleTapZoomable: true,
       useSafeArea: true,
     );
+    // To exit full screen, call this method:
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
   }
 
   void _onShare() {
     final textToShare = "Check out this product on ${AppConfig.APP_NAME}!\n\n"
         "${item.name}\n"
         "Price: ${AppConfig.CURRENCY} ${Utils.moneyFormat(item.price_1)}\n\n"
-        "Get the app here: ${AppConfig.DASHBOARD_URL}";
+        "Get the app here: ${AppConfig.APP_LINK}";
 
     Share.share(textToShare);
   }
@@ -153,29 +155,34 @@ class _ProductScreenState extends State<ProductScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      bottomNavigationBar: _buildBottomActionBar(),
-      body: FutureBuilder(
-        future: initFuture,
-        builder: (context, snapshot) {
-          if (snapshot.connectionState != ConnectionState.done) {
-            return const Center(child: CircularProgressIndicator());
-          }
-          return RefreshIndicator(
-            onRefresh: init,
-            child: CustomScrollView(
-              slivers: [
-                _buildAppBarAndImageSlider(),
-                _buildProductHeader(),
-                if (item.pricesList.isNotEmpty) _buildWholesalePricing(),
-                if (item.getColors().isNotEmpty || item.getSizes().isNotEmpty)
-                  _buildVariantSelector(),
-                if (item.description.isNotEmpty) _buildDescription(),
-                if (relatedProducts.isNotEmpty) _buildRelatedProducts(),
-                const SliverToBoxAdapter(child: SizedBox(height: 24)),
-              ],
-            ),
-          );
-        },
+      body: SafeArea(
+        child: FutureBuilder(
+          future: initFuture,
+          builder: (context, snapshot) {
+            if (snapshot.connectionState != ConnectionState.done) {
+              return const Center(child: CircularProgressIndicator());
+            }
+            return RefreshIndicator(
+              onRefresh: init,
+              child: Column(
+                children: [
+                  Expanded(
+                    child: CustomScrollView(
+                      slivers: [
+                        _buildAppBarAndImageSlider(),
+                        _buildProductHeader(),
+                        _buildDescription(),
+                        if (relatedProducts.isNotEmpty) _buildRelatedProducts(),
+                        const SliverToBoxAdapter(child: SizedBox(height: 24)),
+                      ],
+                    ),
+                  ),
+                  _buildBottomActionBar(),
+                ],
+              ),
+            );
+          },
+        ),
       ),
     );
   }
@@ -406,6 +413,11 @@ class _ProductScreenState extends State<ProductScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            if (item.supplier.length > 4)
+              FxText(
+                'ADDRESS: ${item.supplier}',
+              ),
+            const SizedBox(height: 8),
             FxText.titleMedium("Description", fontWeight: 700),
             const SizedBox(height: 8),
             Html(data: item.description, style: {
@@ -462,7 +474,11 @@ class _ProductScreenState extends State<ProductScreen> {
         children: [
           FxButton.outlined(
             onPressed: () {
-              Utils.toast("Calling...");
+              if (item.url.length < 5) {
+                Utils.toast("No phone number provided");
+                return;
+              }
+              Utils.launchPhone(item.url);
             },
             padding: const EdgeInsets.only(
               left: 12,

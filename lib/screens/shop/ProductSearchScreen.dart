@@ -109,11 +109,16 @@ class _ProductSearchScreenState extends State<ProductSearchScreen> {
         style: const TextStyle(color: Colors.white),
         cursorColor: Colors.white,
         decoration: InputDecoration(
+          focusedBorder: InputBorder.none,
+          contentPadding:
+              const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           prefixIcon:
               const Icon(FeatherIcons.search, color: Colors.white, size: 20),
           hintText: "Search for products...",
-          hintStyle: TextStyle(color: Colors.white.withOpacity(0.7)),
+          hintStyle:
+              TextStyle(color: Colors.white.withOpacity(0.7), fontSize: 14),
           border: InputBorder.none,
+          enabledBorder: InputBorder.none,
           suffixIcon: _searchController.text.isNotEmpty
               ? IconButton(
                   icon:

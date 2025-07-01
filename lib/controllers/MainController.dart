@@ -84,8 +84,6 @@ class MainController extends GetxController {
     products.value = await Product.getItems();
     vendors.value = await VendorModel.get_items();
     //shuffle products.value
-    products.shuffle();
-    products.shuffle();
     update();
     return;
   }

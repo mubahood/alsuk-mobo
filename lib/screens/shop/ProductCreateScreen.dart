@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'dart:io';
 
 import 'package:cached_network_image/cached_network_image.dart';
@@ -21,11 +20,8 @@ import '../../models/ProductCategory.dart';
 import '../../sections/widgets.dart';
 import '../../utils/AppConfig.dart';
 import '../../utils/SizeConfig.dart';
-import 'ColorPickerScreen.dart';
 import 'HtmlEditorScreen.dart';
-import 'PricesEntryScreen.dart';
 import 'ProductCreateScreen2.dart';
-import 'SizesPickerScreen.dart';
 
 class ProductCreateScreen extends StatefulWidget {
   Map<String, dynamic> params = {};
@@ -366,20 +362,44 @@ class CaseCreateBasicState extends State<ProductCreateScreen>
                               ),
                               FormBuilderTextField(
                                 decoration: CustomTheme.input_decoration(
-                                  labelText: 'Product weight',
+                                  labelText: 'Contact Phone Number',
                                 ),
-                                keyboardType: TextInputType.number,
+                                keyboardType: TextInputType.phone,
                                 name: 'url',
                                 onChanged: (x) {
                                   item.url = x.toString();
                                 },
                                 validator: FormBuilderValidators.compose([
                                   FormBuilderValidators.required(
-                                    errorText: "Weight is required.",
+                                    errorText: "Phone number is required.",
                                   ),
-                                  FormBuilderValidators.min(
-                                    1,
-                                    errorText: "Weight is required",
+                                  FormBuilderValidators.minLength(
+                                    5,
+                                    errorText:
+                                        "Phone number should be at least 5 digits.",
+                                  ),
+                                ]),
+                                textInputAction: TextInputAction.next,
+                              ),
+                              const SizedBox(
+                                height: 25,
+                              ),
+                              FormBuilderTextField(
+                                decoration: CustomTheme.input_decoration(
+                                    labelText: 'Product/Service Address'),
+                                keyboardType: TextInputType.streetAddress,
+                                name: 'supplier',
+                                onChanged: (x) {
+                                  item.supplier = x.toString();
+                                },
+                                validator: FormBuilderValidators.compose([
+                                  FormBuilderValidators.required(
+                                    errorText: "Address is required.",
+                                  ),
+                                  FormBuilderValidators.minLength(
+                                    5,
+                                    errorText:
+                                        "Address should be at least 5 characters.",
                                   ),
                                 ]),
                                 textInputAction: TextInputAction.next,
@@ -409,230 +429,9 @@ class CaseCreateBasicState extends State<ProductCreateScreen>
                               const SizedBox(
                                 height: 25,
                               ),
-                              FormBuilderRadioGroup(
-                                decoration: CustomTheme.input_decoration2(
-                                  labelText: 'Has color choices',
-                                ),
-                                validator: FormBuilderValidators.compose([
-                                  FormBuilderValidators.required(
-                                    errorText: "Color choices is required.",
-                                  ),
-                                ]),
-                                options: const [
-                                  FormBuilderFieldOption(
-                                    value: 'Yes',
-                                  ),
-                                  FormBuilderFieldOption(
-                                    value: 'No',
-                                  )
-                                ],
-                                name: 'has_colors',
-                                onChanged: (x) {
-                                  item.has_colors = x.toString();
-                                  setState(() {});
-                                },
-                                initialValue: item.has_colors,
-                              ),
-                              item.has_colors == 'Yes'
-                                  ? Column(
-                                      children: [
-                                        const SizedBox(
-                                          height: 25,
-                                        ),
-                                        FormBuilderTextField(
-                                          decoration:
-                                              CustomTheme.input_decoration(
-                                            labelText: 'Select colors',
-                                          ),
-                                          initialValue: item.colors,
-                                          textCapitalization:
-                                              TextCapitalization.sentences,
-                                          keyboardType: TextInputType.text,
-                                          name: 'colors',
-                                          readOnly: true,
-                                          onTap: () async {
-                                            await showModalBottomSheet(
-                                                context: context,
-                                                builder: (BuildContext c) {
-                                                  return ColorPickerScreen(
-                                                    item.colorList,
-                                                  );
-                                                });
-                                            item.colors =
-                                                jsonEncode(item.colorList);
-                                            _fKey.currentState!.patchValue({
-                                              'colors': item.colors,
-                                            });
-                                            setState(() {});
-                                          },
-                                          validator:
-                                              FormBuilderValidators.compose([
-                                            FormBuilderValidators.required(
-                                              errorText:
-                                                  "Color choices is required.",
-                                            ),
-                                            FormBuilderValidators.min(
-                                              4,
-                                              errorText:
-                                                  "Color choices is required",
-                                            ),
-                                          ]),
-                                          textInputAction: TextInputAction.next,
-                                        ),
-                                      ],
-                                    )
-                                  : const SizedBox(),
-                              const SizedBox(
-                                height: 25,
-                              ),
-                              FormBuilderRadioGroup(
-                                decoration: CustomTheme.input_decoration2(
-                                  labelText: 'Has multiple sizes',
-                                ),
-                                validator: FormBuilderValidators.compose([
-                                  FormBuilderValidators.required(
-                                    errorText: "Sizes are required.",
-                                  ),
-                                ]),
-                                options: const [
-                                  FormBuilderFieldOption(
-                                    value: 'Yes',
-                                  ),
-                                  FormBuilderFieldOption(
-                                    value: 'No',
-                                  )
-                                ],
-                                name: 'has_sizes',
-                                onChanged: (x) {
-                                  item.has_sizes = x.toString();
-                                  setState(() {});
-                                },
-                                initialValue: item.has_sizes,
-                              ),
-                              item.has_sizes == 'Yes'
-                                  ? Column(
-                                      children: [
-                                        const SizedBox(
-                                          height: 25,
-                                        ),
-                                        FormBuilderTextField(
-                                          decoration:
-                                              CustomTheme.input_decoration(
-                                            labelText: 'Enter sizes',
-                                          ),
-                                          initialValue: item.sizes,
-                                          textCapitalization:
-                                              TextCapitalization.sentences,
-                                          keyboardType: TextInputType.text,
-                                          name: 'sizes',
-                                          readOnly: true,
-                                          onTap: () async {
-                                            await showModalBottomSheet(
-                                                context: context,
-                                                builder: (BuildContext c) {
-                                                  return SizesPickerScreen(
-                                                    item.sizesList,
-                                                  );
-                                                });
-                                            item.sizes =
-                                                jsonEncode(item.sizesList);
-                                            _fKey.currentState!.patchValue({
-                                              'sizes': item.sizes,
-                                            });
-                                            setState(() {});
-                                          },
-                                          validator:
-                                              FormBuilderValidators.compose([
-                                            FormBuilderValidators.required(
-                                              errorText: "Sizes are required.",
-                                            ),
-                                          ]),
-                                          textInputAction: TextInputAction.next,
-                                        ),
-                                      ],
-                                    )
-                                  : const SizedBox(),
-                              const SizedBox(
-                                height: 25,
-                              ),
-                              FormBuilderRadioGroup(
-                                decoration: CustomTheme.input_decoration2(
-                                  labelText: 'Has multiple prices',
-                                ),
-                                validator: FormBuilderValidators.compose([
-                                  FormBuilderValidators.required(
-                                    errorText: "Prices are required.",
-                                  ),
-                                ]),
-                                options: const [
-                                  FormBuilderFieldOption(
-                                    value: 'Yes',
-                                  ),
-                                  FormBuilderFieldOption(
-                                    value: 'No',
-                                  )
-                                ],
-                                name: 'p_type',
-                                onChanged: (x) {
-                                  item.p_type = x.toString();
-                                  setState(() {});
-                                },
-                                initialValue: item.p_type,
-                              ),
-                              const SizedBox(
-                                height: 15,
-                              ),
-                              item.p_type == 'Yes'
-                                  ? Column(
-                                      children: [
-                                        FormBuilderTextField(
-                                          decoration:
-                                              CustomTheme.input_decoration(
-                                            labelText: 'Enter Prices',
-                                          ),
-                                          initialValue: item.get_price_text(),
-                                          textCapitalization:
-                                              TextCapitalization.sentences,
-                                          keyboardType: TextInputType.text,
-                                          name: 'prices',
-                                          readOnly: true,
-                                          onTap: () async {
-                                            await showModalBottomSheet(
-                                              context: context,
-                                              isScrollControlled: true,
-                                              builder: (BuildContext c) {
-                                                return FractionallySizedBox(
-                                                  heightFactor: .95,
-                                                  child: PricesEntryScreen(
-                                                    selected: item.pricesList,
-                                                  ),
-                                                );
-                                              },
-                                            );
-
-                                            _fKey.currentState!.patchValue({
-                                              'prices': item.get_price_text(),
-                                            });
-                                            setState(() {});
-                                          },
-                                          validator:
-                                              FormBuilderValidators.compose([
-                                            FormBuilderValidators.required(
-                                              errorText: "Sizes are required.",
-                                            ),
-                                          ]),
-                                          textInputAction: TextInputAction.next,
-                                        ),
-                                        const SizedBox(
-                                          height: 25,
-                                        ),
-                                      ],
-                                    )
-                                  : const SizedBox(),
-                              item.p_type == 'No'
-                                  ? Column(
-                                      children: [
-                                        FormBuilderTextField(
+                              Column(
+                                children: [
+                                  FormBuilderTextField(
                                           decoration:
                                               CustomTheme.input_decoration(
                                             labelText:
@@ -689,8 +488,7 @@ class CaseCreateBasicState extends State<ProductCreateScreen>
                                           height: 15,
                                         ),
                                       ],
-                                    )
-                                  : SizedBox(),
+                              ),
                               FxContainer(
                                 onTap: () async {
                                   var resp = await Get.to(() =>

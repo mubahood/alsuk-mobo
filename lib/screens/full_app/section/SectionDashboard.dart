@@ -151,7 +151,7 @@ class _SectionDashboardState extends State<SectionDashboard> {
                       // Placeholder for vendors
 
                       SectionHeader(
-                        title: 'Top Selling',
+                        title: 'Recently Added Products',
                         onViewAll: () => Get.to(() => ProductsScreen({})),
                       ),
 

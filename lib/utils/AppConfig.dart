@@ -1,11 +1,13 @@
 class AppConfig {
   static String API_BASE_URL = "https://app.alsukssd.com/api";
 
-  // static String API_BASE_URL = "http://10.0.2.2/alsuk-backend/api";
+  // static String API_BASE_URL = "http://10.0.2.2:8888/alsuk-backend/api";
   static String CURRENCY = "UGX";
   static const String ONESIGNAL_APP_ID = "89e02cdc-adf7-436d-8931-2f789bcd740a";
 
   static const String DASHBOARD_URL = "https://app.alsukssd.com";
+  static const String APP_LINK =
+      "https://play.google.com/store/apps/details?id=alsukssd.com";
   // dart run change_app_package_name:main alsukssd.com
 
   /*static const String DASHBOARD_URL = "http://10.0.2.2:8000/ham";*/
@@ -383,5 +385,5 @@ class AppConfig {
 
   static String app_name = 'Al Suk';
   static String terms =
-      'https://www.freeprivacypolicy.com/live/5b255af0-c529-431c-abf9-e362264534c5';
+      'https://www.freeprivacypolicy.com/live/52c38bce-d1dc-4231-9109-3e753daf24c5';
 }

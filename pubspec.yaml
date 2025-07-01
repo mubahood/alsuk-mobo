@@ -1,15 +1,8 @@
 name: nudipu
 description: A new Flutter project.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
-version: 1.0.4+4
-#  pub global run rename --bundleId hambren.com
-#  flutter pub global run rename --appname "Afriinventions"
-# keytool -genkey -v -keystore D:/github/alsuk-mobo/alsud-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload
-# pass: 256Anjane
-# dart run change_app_package_name:main alsukssd.com
-#
-#
-#
+version: 1.0.4+5
+
 environment:
   sdk: '>=3.0.6 <4.0.0'
 
