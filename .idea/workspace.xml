@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afee56e8-5137-40a4-b137-3dac06520f5d" name="Changes" comment="new changes">
-      <change afterPath="$PROJECT_DIR$/.idea/deviceManager.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PRODUCT_SCREEN_REDESIGN_SUMMARY.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alsuk-mobo.code-workspace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/alsuk-mobo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/alsuk-mobo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/shop/ProductScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/shop/ProductScreen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/utils/AppConfig.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/AppConfig.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
