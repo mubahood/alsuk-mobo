@@ -1,11 +1,12 @@
 class AppConfig {
-  static String API_BASE_URL = "https://app.alsukssd.com/api";
+  // static String API_BASE_URL = "https://app.alsukssd.com/api";
 
-  // static String API_BASE_URL = "http://10.0.2.2:8888/alsuk-backend/api";
+  static String API_BASE_URL = "http://10.0.2.2:8888/alsuk-backend/api";
   static String CURRENCY = "UGX";
   static const String ONESIGNAL_APP_ID = "89e02cdc-adf7-436d-8931-2f789bcd740a";
 
-  static const String DASHBOARD_URL = "https://app.alsukssd.com";
+  // static const String DASHBOARD_URL = "https://app.alsukssd.com";
+  static const String DASHBOARD_URL = "http://10.0.2.2:8888/alsuk-backend";
   static const String APP_LINK =
       "https://play.google.com/store/apps/details?id=alsukssd.com";
   // dart run change_app_package_name:main alsukssd.com

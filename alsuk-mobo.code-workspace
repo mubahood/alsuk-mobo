@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../../../../../Applications/MAMP/htdocs/alsuk-backend"
+		},
+		{
+			"path": "../alsuk-web"
 		}
 	],
 	"settings": {}
