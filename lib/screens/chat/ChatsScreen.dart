@@ -504,7 +504,7 @@ class _ChatListItem extends StatelessWidget {
 Check out this product on Al Suk!
 
 Garmin Forerunner 245
-Price: UGX 40,000
+Price: SSP 40,000
 
 Get the app here: https://app.alsukssd.com
 * * */

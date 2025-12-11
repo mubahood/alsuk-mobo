@@ -2,7 +2,7 @@ class AppConfig {
   // static String API_BASE_URL = "https://app.alsukssd.com/api";
 
   static String API_BASE_URL = "http://10.0.2.2:8888/alsuk-backend/api";
-  static String CURRENCY = "UGX";
+  static String CURRENCY = "SSP";
   static const String ONESIGNAL_APP_ID = "89e02cdc-adf7-436d-8931-2f789bcd740a";
 
   // static const String DASHBOARD_URL = "https://app.alsukssd.com";
@@ -142,6 +142,7 @@ class AppConfig {
 
   static const List<String> COUNTRIES = [
     "",
+    "South Sudan",
     "Uganda",
     "Kenya",
     "Tanzania",
